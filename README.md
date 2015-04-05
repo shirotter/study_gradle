@@ -1,2 +1,13 @@
-# study_gradle
-Gradleの勉強
+# Gradleの勉強
+
+## 本リポジトリの目的
+
+個人的なGradleの勉強を目的としています。
+
+### ゴール
+
+下記に列挙された内容を含むプロダクトの開発を即時に始めることが可能な状態にする。
+
+* Javaアプリケーション(Java + Selenium)
+* 単体テスト(jUnit)
+* IDE開発(Eclipse)
