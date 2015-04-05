@@ -1,5 +1,8 @@
 package gradle.study;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * <p>
  * アプリケーション実行の起点となるクラスです。
@@ -11,6 +14,8 @@ package gradle.study;
  * @since 1.0
  */
 public class ApplicationRunner {
+
+    private static final Logger logger = LoggerFactory.getLogger(ApplicationRunner.class);
 
     /**
      * <p>
@@ -27,6 +32,7 @@ public class ApplicationRunner {
      * @since 1.0
      */
     public static void main(String[] args) {
+        logger.info("{} started.", ApplicationRunner.class.getName());
         System.out.println("Study Gradle!!");
     }
 
