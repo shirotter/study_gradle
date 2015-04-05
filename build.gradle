@@ -12,6 +12,10 @@ apply plugin: 'java'
 
 // define
 def defaultEncoding = 'UTF-8'
+def javaVersion = 1.8
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
 
 // In this section you declare where to find the dependencies of your project
 repositories {
