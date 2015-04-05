@@ -9,6 +9,7 @@
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+apply plugin: 'application'
 apply plugin: 'eclipse'
 
 // define
@@ -17,6 +18,9 @@ def javaVersion = 1.8
 
 sourceCompatibility = javaVersion
 targetCompatibility = javaVersion
+
+applicationName = 'study_gradle'
+mainClassName = 'gradle.study.ApplicationRunner'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -40,4 +44,8 @@ dependencies {
 // Task attributes
 tasks.withType(JavaCompile) {
     options.encoding = defaultEncoding
+}
+
+run {
+    standardInput = System.in
 }
