@@ -20,6 +20,7 @@ sourceCompatibility = javaVersion
 targetCompatibility = javaVersion
 
 applicationName = 'study_gradle'
+def applicationVersion = '1.0'
 mainClassName = 'gradle.study.ApplicationRunner'
 
 // In this section you declare where to find the dependencies of your project
@@ -50,6 +51,19 @@ dependencies {
 // Task attributes
 tasks.withType(JavaCompile) {
     options.encoding = defaultEncoding
+}
+
+jar {
+    baseName = 'study_gradle'
+    appendix = 'bin'
+    version = applicationVersion
+    manifest {
+        attributes(
+            "Implementation-Title": "study_gradle",
+            "Implementation-Version": applicationVersion,
+            "Main-Class": "gradle.study.ApplicationRunner"
+        )
+    }
 }
 
 run {
