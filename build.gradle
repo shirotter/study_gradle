@@ -53,6 +53,10 @@ tasks.withType(JavaCompile) {
     options.encoding = defaultEncoding
 }
 
+javadoc {
+    options.links << 'https://docs.oracle.com/javase/jp/8/docs/api/'
+}
+
 jar {
     baseName = 'study_gradle'
     appendix = 'bin'
