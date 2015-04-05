@@ -1,8 +1,150 @@
+#===============================================================================
+# See https://github.com/github/gitignore
+#===============================================================================
+
+# PlayFramework Files
+#   See https://github.com/github/gitignore/blob/master/PlayFramework.gitignore
+#=======================================
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.iml
+*.eml
+/dist/
+.cache
+
+# Java Files
+#   See https://github.com/github/gitignore/blob/master/Java.gitignore
+#=======================================
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Gradle Files
+#   See https://github.com/github/gitignore/blob/master/Gradle.gitignore
+#=======================================
 .gradle
 build/
-
-# Ignore Gradle GUI config
 gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+
+# Subversion Files
+#   https://github.com/github/gitignore/blob/master/Global/SVN.gitignore
+#=======================================
+.svn/
+
+# Windows Files
+#   See https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+#=======================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# MacOSX Files
+#   See https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+#=======================================
+.DS_Store
+._*
+
+# Linux Files
+#   See https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
+#=======================================
+*~
+.directory
+.Trash-*
+
+# Vim Files
+#   See https://github.com/github/gitignore/blob/master/Global/Vim.gitignore
+#=======================================
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Emacs Files
+#   See https://github.com/github/gitignore/blob/master/Global/Emacs.gitignore
+#=======================================
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+*.rel
+/auto/
+.cask/
+
+# SublimeText Files
+#   See https://github.com/github/gitignore/blob/master/Global/SublimeText.gitignore
+#=======================================
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+sftp-config.json
+
+# Eclipse Files
+#   See https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+#=======================================
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.externalToolBuilders/
+*.launch
+.cproject
+.classpath
+.buildpath
+.target
+.texlipse
+
+# JetBrains IDEs Files
+#   See https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore
+#=======================================
+*.iml
+.idea/
+*.ipr
+*.iws
+/out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
